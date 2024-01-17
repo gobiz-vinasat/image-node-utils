@@ -1,4 +1,2 @@
-FROM node:16.14
-
-RUN apt-get update -y \
-  && apt install poppler-utils -y
+FROM express-gateway:1.x
+RUN npm install express-gateway-plugin-jwks
